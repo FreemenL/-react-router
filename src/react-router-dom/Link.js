@@ -1,6 +1,9 @@
 import React,{ Component } from 'react';
 import propTypes from 'prop-types';
 
+/**
+ * a标签组织默认事件。添加点击事件
+ */
 export default class Link extends Component{
 	static contextTypes = {
 		history:propTypes.object

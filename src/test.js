@@ -13,7 +13,5 @@ let params = keys.reduce((memo,key,index)=>{
 	return memo;
 },{})
 
-
-
 console.log(uri==url);
 console.log(keys);

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import MenuLink from './MenuLink';
 import { HashRouter as Router ,Route,Link} from './react-router-dom';
 class App extends Component {
   render() {
@@ -12,15 +12,9 @@ class App extends Component {
                   <div className="navbar-brand">管理系统</div>
                 </div>
                 <ul className="nav navbar-nav">
-                  <li>
-                    <Link to="/home">首页</Link>
-                  </li>
-                  <li>
-                    <Link to="/user">用户管理</Link>
-                  </li>
-                  <li>
-                    <Link to="/profile">个人中心</Link>
-                  </li>
+                  <MenuLink to="/home">首页</MenuLink>
+                  <MenuLink to="/user">用户管理</MenuLink>
+                  <MenuLink to="/profile">个人中心</MenuLink>
                 </ul>
               </div>
             </nav>
